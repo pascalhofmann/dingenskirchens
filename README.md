@@ -8,4 +8,4 @@ Development
 Useful resources:
 * [The Twelve-Factor App](http://12factor.net)
 * [Architecting Applications for Heroku](https://devcenter.heroku.com/articles/architecting-apps)
-* [https://devcenter.heroku.com/articles/getting-started-with-nodejs](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+* [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
