@@ -73,6 +73,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # #               Managed by Puppet.\n"
   # # }
   #
+  
+  # installing puppet modules into the box
+  config.vm.provision :shell do |shell|
+    shell.inline = "mkdir -p /etc/puppet/modules;
+	      
+                  puppet module install --force willdurand/nodejs;
+                  puppet module install --force puppetlabs/stdlib;
+                  puppet module install --force maestrodev/wget;
+                  "
+  end
+  
+  
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "manifests"
     puppet.manifest_file  = "init.pp"
